@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-17 06:14:16 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNWVElJMkk7MjAyNS0wMi0xNzswNTo1MzoxOCBQTTszMzUw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNWVElJMkk7MjAyNS0wMi0xNzswNjoxNDoxNiBQTTsxOzM0NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <input variable="quantity"/>
+            <declare name="unit" type="Real" array="False" size=""/>
+            <declare name="extended" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <if expression="quantity &gt;= 1000">
+                <then>
+                    <assign variable="unit" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="unit" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="extended" expression="quantity*unit"/>
+            <assign variable="tax" expression="extended*0.07"/>
+            <assign variable="total" expression="extended+tax"/>
+            <output expression="quantity" newline="True"/>
+            <output expression="unit" newline="True"/>
+            <output expression="extended" newline="True"/>
+            <output expression="tax" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

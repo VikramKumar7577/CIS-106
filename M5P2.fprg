@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-17 06:30:02 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNWVElJMkk7MjAyNS0wMi0xNzswNjoxNjo1NSBQTTszMzUx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTNWVElJMkk7MjAyNS0wMi0xNzswNjozMDowMiBQTTsxOzM0NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <declare name="unit" type="Real" array="False" size=""/>
+            <declare name="extended" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <input variable="item"/>
+            <input variable="quantity"/>
+            <if expression="item == &quot;A&quot;">
+                <then>
+                    <assign variable="unit" expression="10.00"/>
+                </then>
+                <else>
+                    <assign variable="unit" expression="20.00"/>
+                </else>
+            </if>
+            <assign variable="extended" expression="quantity * unit"/>
+            <output expression="item" newline="True"/>
+            <output expression="unit" newline="True"/>
+            <output expression="extended" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
