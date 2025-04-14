@@ -1,0 +1,10 @@
+Sal 0.267
+Johnson 0.300
+Williams 0.289
+Jones 0.275
+Brown 0.280
+Davis 0.265
+Miller 0.310
+Dora 0.295
+Boots 0.285
+Diego 0.290
