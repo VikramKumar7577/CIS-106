@@ -1,0 +1,10 @@
+Dora,0.300
+Boots,0.278
+Swiper,0.255
+Benny,0.267
+Isa,0.260
+Walter,0.315
+Jesse,0.288
+Saul,0.305
+Skyler,0.270
+Gus,0.320
